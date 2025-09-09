@@ -12,7 +12,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Senior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 150000,
       max: 180000,
@@ -42,7 +42,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 110000,
       max: 135000,
@@ -64,7 +64,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Junior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: null,
     tech_stack: ['Figma', 'Sketch', 'Adobe XD', 'HTML', 'CSS'],
     description:
@@ -105,7 +105,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 75000,
       max: 95000,
@@ -128,7 +128,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Senior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 160000,
       max: 190000,
@@ -158,7 +158,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Junior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 60000,
       max: 75000,
@@ -171,7 +171,7 @@ export const jobsData: Job[] = [
     applicants: 115,
   },
   {
-    id: '5a4b3c2d-1e0f-9a8b-7c6d-5e4f3a2b1c0d',
+    id: '5c4b3c2d-1e0f-8a8b-7c8d-5e4f3a2b1c91d',
     job_title: 'Product Manager Intern',
     company: 'Market Makers Inc.',
     location: {
@@ -204,7 +204,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 120000,
       max: 150000,
@@ -227,7 +227,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Senior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 100000,
       max: 120000,
@@ -249,7 +249,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 80000,
       max: 100000,
@@ -294,7 +294,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Director',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 180000,
       max: 220000,
@@ -317,7 +317,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 95000,
       max: 115000,
@@ -339,7 +339,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Junior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 4000000,
       max: 5500000,
@@ -360,7 +360,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 85000,
       max: 100000,
@@ -383,7 +383,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Senior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 145000,
       max: 170000,
@@ -410,7 +410,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 150000,
       max: 200000,
@@ -453,7 +453,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Senior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 155000,
       max: 195000,
@@ -475,7 +475,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 75000,
       max: 95000,
@@ -497,7 +497,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 60000,
       max: 80000,
@@ -520,7 +520,7 @@ export const jobsData: Job[] = [
       is_remote: true,
     },
     seniority_level: 'Mid-Level',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 105000,
       max: 125000,
@@ -548,7 +548,7 @@ export const jobsData: Job[] = [
       is_remote: false,
     },
     seniority_level: 'Junior',
-    job_type: 'Full-Time',
+    job_type: 'Internship',
     salary_range: {
       min: 50000,
       max: 65000,

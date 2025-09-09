@@ -1,4 +1,9 @@
 import { Job } from '../types';
+import {
+  BriefcaseIcon,
+  MapPinIcon,
+  UsersIcon,
+} from '@heroicons/react/24/solid';
 
 export default function JobCard({ job }: { job: Job }) {
   const formatSalary = (salary: {
@@ -14,33 +19,73 @@ export default function JobCard({ job }: { job: Job }) {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-200">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-gray-800">{job.job_title}</h2>
-        <span className="bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
+    <div
+      className="
+      bg-white 
+      rounded-2xl 
+      shadow-md 
+      p-6 
+      flex flex-col 
+      h-full
+      transition-all duration-300
+      transform 
+      hover:scale-[1.02] 
+      hover:shadow-lg
+      border border-gray-100
+      hover:border-blue-300
+    "
+    >
+      {/* Header Section */}
+      <div className="flex justify-between items-start mb-4">
+        <div>
+          <h2 className="text-xl font-bold text-gray-900 leading-tight">
+            {job.job_title}
+          </h2>
+          <h3 className="text-sm text-gray-600 font-medium mt-1">
+            {job.company}
+          </h3>
+        </div>
+        <span
+          className="
+          bg-blue-100 
+          text-blue-600 
+          text-xs 
+          font-bold 
+          px-3 py-1 
+          rounded-full 
+          whitespace-nowrap 
+          shadow-sm
+        "
+        >
           {job.job_type}
         </span>
       </div>
-      <h3 className="text-lg text-gray-700 font-semibold">{job.company}</h3>
-      <p className="text-gray-500 mt-1">
-        {job.location.is_remote
-          ? 'Remote'
-          : `${job.location.city}, ${job.location.country}`}
-      </p>
 
-      {job.salary_range && (
-        <p className="text-green-600 font-semibold mt-2">
-          {formatSalary(job.salary_range)}
+      {/* Salary & Location Section with Icons */}
+      <div className="flex flex-col gap-2 text-sm text-gray-500 mb-4">
+        <p className="flex items-center">
+          <MapPinIcon className="h-4 w-4 text-gray-400 mr-2" />
+          {job.location.is_remote
+            ? 'Remote'
+            : `${job.location.city}, ${
+                job.location.state ? `${job.location.state}, ` : ''
+              }${job.location.country}`}
         </p>
-      )}
+        {job.salary_range && (
+          <p className="text-green-600 font-semibold">
+            {formatSalary(job.salary_range)}
+          </p>
+        )}
+      </div>
 
-      <div className="mt-4">
-        <p className="text-gray-600 font-medium">Tech Stack:</p>
-        <div className="flex flex-wrap gap-2 mt-1">
+      {/* Tech Stack Section */}
+      <div className="mt-2">
+        <p className="text-gray-700 font-semibold mb-2">Skills:</p>
+        <div className="flex flex-wrap gap-2">
           {job.tech_stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 text-gray-700 text-sm px-2 py-1 rounded-full"
+              className="bg-gray-100 text-gray-700 text-xs px-2.5 py-1 rounded-full border border-gray-200"
             >
               {tech}
             </span>
@@ -48,16 +93,20 @@ export default function JobCard({ job }: { job: Job }) {
         </div>
       </div>
 
+      {/* Description Section */}
       <p className="text-sm text-gray-500 mt-4 line-clamp-3">
         {job.description}
       </p>
 
-      <div className="mt-6 text-sm text-gray-500">
-        <p>
+      {/* Footer/Details Section */}
+      <div className="mt-auto pt-6 flex flex-col gap-2 text-sm text-gray-500 border-t border-gray-100 mt-6">
+        <p className="flex items-center">
+          <BriefcaseIcon className="h-4 w-4 text-gray-400 mr-2" />
           <span className="font-semibold">Seniority:</span>{' '}
           {job.seniority_level}
         </p>
-        <p>
+        <p className="flex items-center">
+          <UsersIcon className="h-4 w-4 text-gray-400 mr-2" />
           <span className="font-semibold">Applicants:</span> {job.applicants}
         </p>
         <p>
