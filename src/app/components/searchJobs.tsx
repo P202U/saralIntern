@@ -1,8 +1,7 @@
-// src/app/components/SearchJobs.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Job } from '../types';
+import { Job } from '../../types';
 import JobCard from './JobCard';
 
 // Location synonyms
@@ -56,7 +55,7 @@ export default function SearchJobs({ jobs }: { jobs: Job[] }) {
           placeholder="Search for jobs or locations..."
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
-          className="w-full max-w-lg p-3 text-lg border-2 border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+          className="w-full max-w-lg p-3 text-lg border-2 border-gray-700 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300 placeholder:text-gray-400 bg-gray-800 text-white"
         />
       </div>
 
@@ -65,7 +64,7 @@ export default function SearchJobs({ jobs }: { jobs: Job[] }) {
         {filteredJobs.length > 0 ? (
           filteredJobs.map(job => <JobCard key={job.id} job={job} />)
         ) : (
-          <p className="text-center text-gray-500 col-span-full">
+          <p className="text-center text-gray-400 col-span-full">
             No jobs found matching your search.
           </p>
         )}

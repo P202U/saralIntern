@@ -1,4 +1,4 @@
-import { Job } from './types'; // Adjust the path to your types file
+import { Job } from './types';
 
 export const jobsData: Job[] = [
   {
@@ -30,6 +30,7 @@ export const jobsData: Job[] = [
       'We are seeking a highly skilled Senior Java Backend Developer to design, develop, and maintain robust backend services. Strong experience with Spring Boot and microservices architecture is essential.',
     posted_date: '2025-09-01',
     applicants: 52,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'a9b1c2d3-4e5f-6a7b-8c9d-0e1f2a3b4c5d',
@@ -53,6 +54,7 @@ export const jobsData: Job[] = [
       'Join our dynamic team to build and maintain both the front-end and back-end of our cutting-edge web applications. We are looking for someone with a passion for clean code.',
     posted_date: '2025-08-28',
     applicants: 78,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'f8e7d6c5-b4a3-2c1b-0a9d-8c7b6a5d4e3f',
@@ -76,6 +78,7 @@ export const jobsData: Job[] = [
       "We're looking for a creative UI/UX Designer to help us craft beautiful and intuitive user experiences for our enterprise software solutions.",
     posted_date: '2025-09-05',
     applicants: 94,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'c1a2b3d4-e5f6-a7b8-c9d0-e1f2a3b4c5d6',
@@ -99,6 +102,7 @@ export const jobsData: Job[] = [
       'An excellent opportunity for a student to gain hands-on experience in the field of data science. You will assist our senior data scientists with data cleaning and analysis.',
     posted_date: '2025-09-02',
     applicants: 156,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'd6e5c4b3-a2b1-0c9d-8e7f-6a5b4c3d2e1f',
@@ -122,6 +126,7 @@ export const jobsData: Job[] = [
       'We are seeking a talented Android developer to join our mobile team. You will work on new features, bug fixes, and performance improvements for our educational application.',
     posted_date: '2025-09-03',
     applicants: 67,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '8b9a7c6f-5e4d-3c2b-1a09-8f7e6d5c4b3a',
@@ -145,6 +150,7 @@ export const jobsData: Job[] = [
       "Bring your expertise in cloud infrastructure and CI/CD to our team. You'll be responsible for automating our deployment pipelines and managing our cloud environments.",
     posted_date: '2025-09-04',
     applicants: 38,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '9d8c7b6a-5f4e-3d2c-1b0a-9e8d7c6b5a4f',
@@ -168,6 +174,7 @@ export const jobsData: Job[] = [
       'An excellent opportunity for an enthusiastic and motivated junior developer to kickstart their career. You will work alongside senior developers on exciting projects.',
     posted_date: '2025-09-01',
     applicants: 112,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '5b4b3c2d-1e0f-9a8b-7c6d-5d4f8a2b3c0d',
@@ -191,6 +198,7 @@ export const jobsData: Job[] = [
       'Assist our consulting team in analyzing business processes and requirements. This role is a great way to get started in the world of business and tech.',
     posted_date: '2025-08-30',
     applicants: 134,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '7b6a5d4c-3e2f-1d0c-9b8a-7e6d5c4b3a21',
@@ -214,6 +222,7 @@ export const jobsData: Job[] = [
       'We are seeking a talented Machine Learning Engineer to help us develop and deploy cutting-edge AI models for our e-commerce platform. Experience with NLP or computer vision is a plus.',
     posted_date: '2025-09-06',
     applicants: 45,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'f2e1d0c9-8b7a-6f5e-4d3c-2b1a0f9e8d7c',
@@ -243,6 +252,7 @@ export const jobsData: Job[] = [
       'Design and oversee the implementation of large-scale cloud computing solutions for our clients. This is a leadership role requiring deep technical expertise.',
     posted_date: '2025-08-25',
     applicants: 21,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'd0c9b8a7-e6f5-d4c3-b2a1-0e9d8c7b6a5f',
@@ -266,6 +276,7 @@ export const jobsData: Job[] = [
       'Ensure the quality of our software products through manual and automated testing. You will work closely with development teams to identify and resolve issues.',
     posted_date: '2025-09-07',
     applicants: 64,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'f5e4d3c2-b1a0-9c8d-7e6f-5a4b3c2d1e0f',
@@ -289,6 +300,7 @@ export const jobsData: Job[] = [
       'Help us protect our digital assets from threats. You will be responsible for monitoring security systems, responding to incidents, and conducting vulnerability assessments.',
     posted_date: '2025-09-08',
     applicants: 81,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'a9b8c7d6-e5f4-d3c2-b1a0-9e8d7c6b5a4f',
@@ -312,6 +324,7 @@ export const jobsData: Job[] = [
       'Lead the strategy and execution of our product roadmap for our food delivery platform. You will be the voice of the customer and work cross-functionally with engineering, design, and marketing teams.',
     posted_date: '2025-08-29',
     applicants: 41,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'c3d2e1f0-9a8b-7c6d-5e4f-3a2b1c0d9e8f',
@@ -335,6 +348,7 @@ export const jobsData: Job[] = [
       'Manage and deliver technology projects on time and within budget. You will work closely with stakeholders to define project scope, goals, and deliverables.',
     posted_date: '2025-09-04',
     applicants: 38,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: 'e7d6c5b4-a3b2-c1d0-9e8f-7a6b5c4d3e21',
@@ -358,6 +372,7 @@ export const jobsData: Job[] = [
       'We are seeking a talented Data Analyst to join our team. You will be responsible for collecting, cleaning, and analyzing data to support business decisions for our clients.',
     posted_date: '2025-08-27',
     applicants: 72,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '9b8a7c6d-5e4f-3d2c-1b0a-9e8d7c6b5a4f',
@@ -381,6 +396,7 @@ export const jobsData: Job[] = [
       'We are seeking a Technical Writer to create clear and concise documentation for our software products. You will work closely with engineers to ensure accuracy and clarity.',
     posted_date: '2025-09-08',
     applicants: 60,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '1c2b3a4d-5e6f-7c8d-9e0f-1a2b3c4d5e6f',
@@ -409,6 +425,7 @@ export const jobsData: Job[] = [
       'Lead user research initiatives to inform our product strategy and design for our food delivery and dining platform. You will be responsible for planning and executing research studies and communicating findings to the team.',
     posted_date: '2025-08-29',
     applicants: 27,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '2d1c3b4a-5f6e-7d8c-9b0a-1e2f3d4c5b6a',
@@ -432,6 +449,7 @@ export const jobsData: Job[] = [
       'Manage and maintain our IT infrastructure, including servers, networks, and storage systems. You will be responsible for system uptime, security, and performance.',
     posted_date: '2025-09-03',
     applicants: 42,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '3e2d1c4b-5a6f-7b8c-9d0e-1f2a3b4c5d6e',
@@ -455,6 +473,7 @@ export const jobsData: Job[] = [
       'We are looking for a motivated Data Analyst Intern to join our team. You will be responsible for collecting, cleaning, and analyzing data to support business decisions.',
     posted_date: '2025-09-05',
     applicants: 122,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '4f3e2d1c-5a6b-7c8d-9e0f-1a2b3c4d5e6f',
@@ -478,6 +497,7 @@ export const jobsData: Job[] = [
       'Ensure the reliability and scalability of our production systems. You will work on designing and implementing monitoring, alerting, and incident response systems.',
     posted_date: '2025-09-07',
     applicants: 35,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '5c4b3c2d-1e0f-9a8b-7c6d-5e4f5a2b1c0d',
@@ -501,6 +521,7 @@ export const jobsData: Job[] = [
       'We are seeking a talented iOS developer to join our mobile team. You will work on new features, bug fixes, and performance improvements for our fashion e-commerce application.',
     posted_date: '2025-09-03',
     applicants: 47,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '6c5b4a3d-2e1f-0a9d-8c7b-6a5d4e3f2c1b',
@@ -524,6 +545,7 @@ export const jobsData: Job[] = [
       "Design, implement, and manage our company's network infrastructure. You will be responsible for network performance, security, and reliability.",
     posted_date: '2025-09-06',
     applicants: 25,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '7d8c9b0a-1e2f-3d4c-5b6a-7f8e9d0c1b2a',
@@ -552,6 +574,7 @@ export const jobsData: Job[] = [
       'We are seeking an experienced Salesforce Developer to customize and build new features on the Salesforce platform. You will work with business analysts to deliver solutions.',
     posted_date: '2025-09-01',
     applicants: 41,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b',
@@ -575,6 +598,7 @@ export const jobsData: Job[] = [
       'Provide first-line technical support to our employees. You will resolve hardware and software issues and maintain IT equipment.',
     posted_date: '2025-09-04',
     applicants: 68,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
   {
     id: '9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d',
@@ -598,5 +622,6 @@ export const jobsData: Job[] = [
       "A paid internship for students interested in full-stack development. You will contribute to real-world projects and be mentored by senior engineers at India's leading fantasy sports platform.",
     posted_date: '2025-09-02',
     applicants: 105,
+    apply_url: 'https://pminternship.mca.gov.in/login/',
   },
 ];

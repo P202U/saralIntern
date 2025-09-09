@@ -19,4 +19,5 @@ export interface Job {
   description: string;
   posted_date: string;
   applicants: number;
+  apply_url: string;
 }
