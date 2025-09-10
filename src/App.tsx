@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import RecommendationForm from './components/RecommendationForm';
@@ -17,9 +17,9 @@ function App() {
     setShowForm(true);
     // Smooth scroll to form
     setTimeout(() => {
-      document.getElementById('form')?.scrollIntoView({ 
+      document.getElementById('form')?.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }, 100);
   };
@@ -28,12 +28,12 @@ function App() {
     setUserProfile(profile);
     setShowForm(false);
     setShowResults(true);
-    
+
     // Simulate AI processing time
     setTimeout(() => {
-      document.querySelector('[data-results]')?.scrollIntoView({ 
+      document.querySelector('[data-results]')?.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }, 500);
   };
@@ -42,9 +42,9 @@ function App() {
     setShowResults(false);
     setShowForm(true);
     setTimeout(() => {
-      document.getElementById('form')?.scrollIntoView({ 
+      document.getElementById('form')?.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }, 100);
   };
@@ -52,26 +52,23 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       <main>
         <Hero onStartMatching={handleStartMatching} />
-        
-        <RecommendationForm 
-          isVisible={showForm} 
-          onSubmit={handleFormSubmit} 
-        />
-        
+
+        <RecommendationForm isVisible={showForm} onSubmit={handleFormSubmit} />
+
         <div data-results>
-          <RecommendationResults 
-            isVisible={showResults} 
+          <RecommendationResults
+            isVisible={showResults}
             onBack={handleBackToForm}
           />
         </div>
-        
+
         <Features />
         <Testimonials />
       </main>
-      
+
       <Footer />
     </div>
   );

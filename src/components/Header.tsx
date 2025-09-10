@@ -1,5 +1,6 @@
 import React from 'react';
 import { Globe, Menu } from 'lucide-react';
+import FlashingHeader from './FlashingHeader';
 
 const Header: React.FC = () => {
   return (
@@ -11,11 +12,13 @@ const Header: React.FC = () => {
               <span className="text-white font-bold text-lg">PM</span>
             </div>
             <div>
-              <h1 className="text-lg font-bold text-gray-800">PM Internship Scheme</h1>
+              <h1 className="text-lg font-bold text-gray-800">
+                PM Internship Scheme
+              </h1>
               <p className="text-sm text-gray-600">AI Recommendation System</p>
             </div>
           </div>
-          
+
           <div className="flex items-center space-x-4">
             <button className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors">
               <Globe className="h-4 w-4" />
@@ -26,13 +29,35 @@ const Header: React.FC = () => {
             </button>
           </div>
         </div>
-        
-        <nav className="hidden md:flex mt-4 space-x-6">
-          <a href="#home" className="text-orange-600 font-medium border-b-2 border-orange-400 pb-1">Home</a>
-          <a href="#internships" className="text-gray-600 hover:text-orange-600 transition-colors">Find Internships</a>
-          <a href="#about" className="text-gray-600 hover:text-orange-600 transition-colors">About Scheme</a>
-          <a href="#help" className="text-gray-600 hover:text-orange-600 transition-colors">Help</a>
-        </nav>
+        <div className="flex justify-between">
+          <nav className="hidden md:flex mt-4 space-x-6">
+            <a
+              href="#home"
+              className="text-orange-600 font-medium border-b-2 border-orange-400 pb-1"
+            >
+              Home
+            </a>
+            <a
+              href="#internships"
+              className="text-gray-600 hover:text-orange-600 transition-colors"
+            >
+              Find Internships
+            </a>
+            <a
+              href="#about"
+              className="text-gray-600 hover:text-orange-600 transition-colors"
+            >
+              About Scheme
+            </a>
+            <a
+              href="#help"
+              className="text-gray-600 hover:text-orange-600 transition-colors"
+            >
+              Help
+            </a>
+          </nav>
+          <FlashingHeader />
+        </div>
       </div>
     </header>
   );
