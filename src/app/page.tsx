@@ -11,8 +11,11 @@ export default async function HomePage() {
       <section className="bg-background text-foreground py-16 md:py-24 lg:py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-            Caliber: Unlock Your Potential
+            SaralIntern
           </h1>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight tracking-tight">
+            A Vernacular AI-Powered Internship Matchmaking Platform
+          </h2>
           <p className="mt-4 text-lg md:text-xl lg:text-2xl font-light text-foreground-secondary max-w-3xl mx-auto">
             The future of internships is here. We&apos;re revolutionizing the
             way you find opportunities by bringing the best internships from
@@ -25,7 +28,7 @@ export default async function HomePage() {
       <section className="bg-background-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
-            Why Choose Caliber?
+            Why Choose SaralIntern?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-background-card p-6 rounded-lg shadow-lg text-center transform transition-transform hover:scale-105 duration-300">

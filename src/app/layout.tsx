@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Caliber: Unlock Your Potential',
+  title: 'SaralIntern - Vernacular AI-Powered Internship Matchmaking Platform',
   description:
     'The future of internships is here. We&apos;re revolutionizing the way you find opportunities by bringing the best internships from trusted government sources directly to you.',
 };
