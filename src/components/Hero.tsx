@@ -57,7 +57,7 @@ const Hero: React.FC<HeroProps> = ({ onStartMatching }) => {
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://i.cdn.newsbytesapp.com/images/l97520240412141834.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                alt="Diverse Indian youth using technology for career growth"
+                alt="PM Modi"
                 className="w-full h-80 md:h-96 object-cover"
               />
             </div>
