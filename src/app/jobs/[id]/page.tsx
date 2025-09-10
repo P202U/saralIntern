@@ -30,19 +30,17 @@ export default function JobDetailsPage() {
     const max = salary.max.toLocaleString('en-IN');
     const currency =
       salary.currency === 'INR_monthly' ? '₹ (Monthly)' : '₹ (LPA)';
-    return `${currency} ${min} - ${max}`;
+    return `${min} - ${max} ${currency}`;
   };
 
   return (
     <div className="max-w-4xl mx-auto p-8">
-      <div className="bg-white rounded-2xl shadow-lg p-8">
+      <div className="bg-gray-900 rounded-2xl shadow-lg p-8">
         {/* Job Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">
-              {job.job_title}
-            </h1>
-            <h2 className="text-lg text-gray-600 font-medium mt-2">
+            <h1 className="text-3xl font-bold text-white">{job.job_title}</h1>
+            <h2 className="text-lg text-white 600 font-medium mt-2">
               {job.company}
             </h2>
           </div>
@@ -52,9 +50,9 @@ export default function JobDetailsPage() {
         </div>
 
         {/* Salary & Location */}
-        <div className="flex flex-wrap gap-4 text-gray-500 mb-6 border-b border-gray-200 pb-6">
-          <p className="flex items-center text-base">
-            <MapPinIcon className="h-5 w-5 text-gray-400 mr-2" />
+        <div className=" text-white mb-6 border-b border-gray-200 pb-6">
+          <p className="flex items-center text-base my-2">
+            <MapPinIcon className="h-5 w-5 text-white mr-2" />
             {job.location.is_remote
               ? 'Remote'
               : `${job.location.city}, ${
@@ -63,20 +61,22 @@ export default function JobDetailsPage() {
           </p>
           {job.salary_range && (
             <p className="text-green-600 font-semibold text-base">
+              {' '}
+              <span className="text-stone-200 font-light mx-2">Stipened:</span>
               {formatSalary(job.salary_range)}
             </p>
           )}
         </div>
 
         {/* Job Description */}
-        <div className="prose max-w-none text-gray-700 leading-relaxed mb-6">
+        <div className="prose max-w-none text-stone-200 leading-relaxed mb-6">
           <h3 className="text-xl font-semibold mb-4">Job Description</h3>
-          <p>{job.description}</p>
+          <p className="text-white">{job.description}</p>
         </div>
 
         {/* Skills & Requirements */}
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-xl font-semibold text-stone-200 mb-4">
             Skills & Tech Stack
           </h3>
           <div className="flex flex-wrap gap-3">
@@ -92,18 +92,22 @@ export default function JobDetailsPage() {
         </div>
 
         {/* More Details */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-500 mb-8 border-t border-gray-200 pt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-stone-200 mb-8 border-t border-gray-200 pt-6">
           <p className="flex items-center">
-            <BriefcaseIcon className="h-5 w-5 text-gray-400 mr-2" />
+            <BriefcaseIcon className="h-5 w-5 text-white mr-2" />
             <span className="font-semibold">Seniority:</span>{' '}
             {job.seniority_level}
           </p>
           <p className="flex items-center">
-            <UsersIcon className="h-5 w-5 text-gray-400 mr-2" />
-            <span className="font-semibold">Applicants:</span> {job.applicants}
+            <UsersIcon className="h-5 w-5 text-white mr-2" />
+            <span className="font-semibold text-stone-100">
+              Applicants:
+            </span>{' '}
+            <span className="text-white">{job.applicants}</span>
           </p>
           <p>
-            <span className="font-semibold">Posted:</span> {job.posted_date}
+            <span className="font-semibold text-stone-100">Posted:</span>{' '}
+            <span className="text-white">{job.posted_date}</span>
           </p>
         </div>
 

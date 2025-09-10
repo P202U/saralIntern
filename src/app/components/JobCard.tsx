@@ -23,7 +23,7 @@ export default function JobCard({ job }: { job: Job }) {
     <Link href={`/jobs/${job.id}`} passHref>
       <div
         className="
-        bg-white 
+        bg-gray 
         rounded-2xl 
         shadow-md 
         p-6 
@@ -40,7 +40,7 @@ export default function JobCard({ job }: { job: Job }) {
         {/* Header Section */}
         <div className="flex justify-between items-start mb-4">
           <div>
-            <h2 className="text-xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-xl font-bold text-white-900 leading-tight">
               {job.job_title}
             </h2>
             <h3 className="text-sm text-gray-600 font-medium mt-1">
