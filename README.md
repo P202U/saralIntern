@@ -14,7 +14,7 @@
 
 *Bridging the gap between first-generation learners and internship opportunities across India*
 
-[🚀 Live Demo](#) • [📖 Documentation](#) • [🤝 Contribute](#contributing) • [📧 Contact](#contact)
+[🚀 Live Demo](scrap-lyart.vercel.app) • [📖 Documentation](#) • [🤝 Contribute](#contributing) • [📧 Contact](#contact)
 
 </div>
 
