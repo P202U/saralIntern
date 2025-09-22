@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add to your Tailwind CSS file or component */
+
+.location-selector-button {
+  @apply w-full p-4 rounded-xl border-2 transition-all text-left min-h-[60px] flex items-center justify-center;
+  @apply font-semibold;
+  @apply border-gray-200 hover:border-gray-300;
+  @apply text-gray-700;
+}
+
+.location-selector-input {
+  @apply flex-grow p-4 rounded-xl border-2 transition-all;
+  @apply border-gray-200 focus:border-purple-500 focus:outline-none;
+  @apply text-lg min-h-[60px];
+}
+
+.location-selector-submit {
+  @apply bg-green-500 text-white font-semibold py-3 px-6 rounded-xl transition-all;
+  @apply hover:bg-green-600;
+  @apply cursor-pointer;
+}
+
+/* Specific button styles for hover and active states */
+.location-selector-button:hover:not(.disabled) {
+  @apply border-purple-500;
+}
+
+.location-selector-button:active {
+  @apply bg-purple-50;
+  @apply text-purple-700;
+  @apply border-purple-500;
+}
+
+.location-selector-button.disabled {
+  @apply border-gray-100 text-gray-400 cursor-not-allowed;
+}
+
+.location-selector-message {
+  @apply mt-4 text-center text-sm font-medium text-gray-600;
+}
