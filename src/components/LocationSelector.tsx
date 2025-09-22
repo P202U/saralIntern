@@ -1,5 +1,3 @@
-// src/components/LocationSelector.tsx
-
 import React, { useState } from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 
@@ -49,14 +47,18 @@ const LocationSelector: React.FC<LocationSelectorProps> = ({
 
   return (
     <div className="space-y-4">
+      {/* Get Current Location Button */}
       <button
         type="button"
         onClick={handleGetCurrentLocation}
-        className={`location-selector-button ${
-          currentLocation.startsWith('Lat')
-            ? 'border-purple-500 bg-purple-50 text-purple-700'
-            : 'border-gray-200 text-gray-700'
-        }`}
+        className={`
+          w-full p-4 rounded-xl border-2 transition-all text-left min-h-[60px] flex items-center justify-center font-semibold
+          ${
+            currentLocation.startsWith('Lat')
+              ? 'border-purple-500 bg-purple-50 text-purple-700'
+              : 'border-gray-200 hover:border-gray-300 text-gray-700'
+          }
+        `}
       >
         <MapPin className="h-6 w-6 mr-3" />
         <span className="font-medium">Get Current Location</span>
@@ -65,31 +67,45 @@ const LocationSelector: React.FC<LocationSelectorProps> = ({
         )}
       </button>
 
-      <div className="flex items-center space-x-3">
+      {/* Pincode Input & Submit Button */}
+      <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-3">
         <input
           type="text"
           value={pincode}
           onChange={e => {
             setPincode(e.target.value);
             setIsPincodeActive(true);
-            onLocationUpdate(''); // Clear the location when typing starts
+            onLocationUpdate('');
           }}
           placeholder="Enter Pincode"
           maxLength={6}
-          className={`location-selector-input ${
-            isPincodeActive ? 'border-purple-500' : 'border-gray-200'
-          }`}
+          className={`
+      w-full p-4 rounded-xl border-2 transition-all text-lg min-h-[60px]
+      ${
+        isPincodeActive
+          ? 'border-purple-500'
+          : 'border-gray-200 focus:border-purple-500 focus:outline-none'
+      }
+    `}
         />
         <button
           type="button"
           onClick={handleEnterPincode}
-          className="location-selector-submit"
+          className="
+      w-full sm:w-auto flex-shrink-0 px-6 py-3 rounded-xl bg-orange-500 text-white font-semibold transition-all
+      hover:bg-orange-600
+    "
         >
           Submit
         </button>
       </div>
 
-      {message && <p className="location-selector-message">{message}</p>}
+      {/* Message */}
+      {message && (
+        <p className="mt-4 text-center text-sm font-medium text-gray-600">
+          {message}
+        </p>
+      )}
     </div>
   );
 };
