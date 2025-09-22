@@ -5,7 +5,7 @@ import { MapPin, ArrowRight } from 'lucide-react';
 
 interface LocationSelectorProps {
   onLocationUpdate: (newLocation: string) => void;
-  currentLocation: string; // Add a prop to show the selected value
+  currentLocation: string; // To show the selected value
 }
 
 const LocationSelector: React.FC<LocationSelectorProps> = ({
