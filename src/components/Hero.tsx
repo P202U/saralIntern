@@ -23,8 +23,8 @@ const Hero: React.FC<HeroProps> = ({ onStartMatching }) => {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
-              सरकारी internships आसानी से find करें। AI technology आपके skills
-              और interests के according best opportunities suggest करती है।
+              Easily find government internships. AI technology suggests the
+              best opportunities according to your skills and interests.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

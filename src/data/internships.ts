@@ -10,7 +10,7 @@ export const sampleInternships: Internship[] = [
     stipend: '₹15,000/month',
     matchPercentage: 95,
     sector: 'Government',
-    requirements: ['12th Pass', 'Basic Computer Skills', 'Hindi/English']
+    requirements: ['12th Pass', 'Basic Computer Skills', 'Hindi/English'],
   },
   {
     id: '2',
@@ -21,7 +21,7 @@ export const sampleInternships: Internship[] = [
     stipend: '₹12,000/month',
     matchPercentage: 88,
     sector: 'Rural Development',
-    requirements: ['Graduate', 'Community Engagement', 'Local Language']
+    requirements: ['Graduate', 'Community Engagement', 'Local Language'],
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ export const sampleInternships: Internship[] = [
     stipend: '₹18,000/month',
     matchPercentage: 82,
     sector: 'Healthcare',
-    requirements: ['12th Pass', 'Patient Care', 'English Communication']
+    requirements: ['12th Pass', 'Patient Care', 'English Communication'],
   },
   {
     id: '4',
@@ -43,7 +43,7 @@ export const sampleInternships: Internship[] = [
     stipend: '₹14,000/month',
     matchPercentage: 76,
     sector: 'Education',
-    requirements: ['Graduate', 'Teaching Skills', 'Local Language']
+    requirements: ['Graduate', 'Teaching Skills', 'Local Language'],
   },
   {
     id: '5',
@@ -54,8 +54,8 @@ export const sampleInternships: Internship[] = [
     stipend: '₹20,000/month',
     matchPercentage: 73,
     sector: 'Technology',
-    requirements: ['Graduate', 'Computer Skills', 'Technical Support']
-  }
+    requirements: ['Graduate', 'Computer Skills', 'Technical Support'],
+  },
 ];
 
 export const testimonials: Testimonial[] = [
@@ -64,23 +64,29 @@ export const testimonials: Testimonial[] = [
     name: 'Priya Sharma',
     location: 'Rural Uttar Pradesh',
     internshipTitle: 'Digital Marketing Assistant',
-    quote: 'इस internship से मुझे नई skills मिलीं और अच्छी नौकरी भी मिली। बहुत आसान process था।',
-    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
+    quote:
+      ' I got new skills from this internship and also got a good job. The process was very easy.',
+    avatar:
+      'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
   },
   {
     id: '2',
     name: 'Ravi Kumar',
     location: 'Tribal Odisha',
     internshipTitle: 'Rural Development Trainee',
-    quote: 'मेरे community को help करने का मौका मिला। Government scheme बहुत helpful है।',
-    avatar: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
+    quote:
+      'I got a chance to help my community. The government scheme is very helpful.',
+    avatar:
+      'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
   },
   {
     id: '3',
     name: 'Meera Devi',
     location: 'Mumbai Slum',
     internshipTitle: 'Healthcare Support',
-    quote: 'Hospital में काम करके medical field में career बना सकी। Life change हो गई।',
-    avatar: 'https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop'
-  }
+    quote:
+      'By working in the hospital, I was able to make a career in the medical field. My life has changed.',
+    avatar:
+      'https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+  },
 ];

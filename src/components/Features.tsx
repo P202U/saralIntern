@@ -6,39 +6,45 @@ const Features: React.FC = () => {
     {
       icon: Brain,
       title: 'AI-Powered Matching',
-      description: 'Advanced AI technology आपके skills और interests को समझकर perfect internships suggest करती है।',
-      color: 'text-purple-600 bg-purple-100'
+      description:
+        'AI technology understands your skills and interests to suggest perfect internships.',
+      color: 'text-purple-600 bg-purple-100',
     },
     {
       icon: Smartphone,
       title: 'Mobile-First Design',
-      description: 'किसी भी smartphone पर आसानी से use कर सकते हैं। Simple और user-friendly interface।',
-      color: 'text-blue-600 bg-blue-100'
+      description:
+        'Can be used easily on any smartphone. Simple and user-friendly interface.',
+      color: 'text-blue-600 bg-blue-100',
     },
     {
       icon: Globe,
       title: 'Regional Language Support',
-      description: 'Hindi और अन्य regional languages में पूरी जानकारी मिलती है।',
-      color: 'text-green-600 bg-green-100'
+      description:
+        'Complete information is available in Hindi and other regional languages.',
+      color: 'text-green-600 bg-green-100',
     },
     {
       icon: Users,
       title: 'Community Support',
-      description: 'Other interns से connect करें और experiences share करें। Peer support मिलती है।',
-      color: 'text-orange-600 bg-orange-100'
+      description:
+        'Connect with other interns and share experiences. You get peer support',
+      color: 'text-orange-600 bg-orange-100',
     },
     {
       icon: Award,
       title: 'Government Verified',
-      description: 'सभी internships government verified हैं। Safe और legitimate opportunities।',
-      color: 'text-red-600 bg-red-100'
+      description:
+        'All internships are government-verified. Safe and legitimate opportunities.',
+      color: 'text-red-600 bg-red-100',
     },
     {
       icon: Shield,
       title: 'Secure Platform',
-      description: 'आपकी personal information completely secure रहती है। Data privacy हमारी priority है।',
-      color: 'text-teal-600 bg-teal-100'
-    }
+      description:
+        'Your personal information remains completely secure. Data privacy is our priority.',
+      color: 'text-teal-600 bg-teal-100',
+    },
   ];
 
   return (
@@ -49,7 +55,8 @@ const Features: React.FC = () => {
             Why Choose Our Platform?
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            हमने इस platform को specially Indian youth के लिए design किया है। Simple, accessible, और effective।
+            We've designed this platform specially for Indian youth. It's
+            simple, accessible, and effective.
           </p>
         </div>
 
@@ -57,12 +64,21 @@ const Features: React.FC = () => {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
-                <div className={`inline-flex p-3 rounded-xl ${feature.color} mb-4`}>
+              <div
+                key={index}
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100"
+              >
+                <div
+                  className={`inline-flex p-3 rounded-xl ${feature.color} mb-4`}
+                >
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             );
           })}

@@ -11,25 +11,32 @@ const Testimonials: React.FC = () => {
             Success Stories
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            हमारे platform के through successful internship पाने वाले youth के experiences सुनिए।
+            Listen to the experiences of youth who successfully found an
+            internship through our platform.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-gray-50 rounded-2xl p-6 relative hover:shadow-lg transition-shadow duration-300">
+          {testimonials.map(testimonial => (
+            <div
+              key={testimonial.id}
+              className="bg-gray-50 rounded-2xl p-6 relative hover:shadow-lg transition-shadow duration-300"
+            >
               <Quote className="h-8 w-8 text-orange-400 mb-4" />
-              
+
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                  <Star
+                    key={i}
+                    className="h-4 w-4 text-yellow-400 fill-current"
+                  />
                 ))}
               </div>
-              
+
               <p className="text-gray-700 mb-6 leading-relaxed">
                 "{testimonial.quote}"
               </p>
-              
+
               <div className="flex items-center">
                 <img
                   src={testimonial.avatar}
@@ -37,9 +44,15 @@ const Testimonials: React.FC = () => {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-600">{testimonial.location}</p>
-                  <p className="text-sm text-orange-600 font-medium">{testimonial.internshipTitle}</p>
+                  <h4 className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-sm text-gray-600">
+                    {testimonial.location}
+                  </p>
+                  <p className="text-sm text-orange-600 font-medium">
+                    {testimonial.internshipTitle}
+                  </p>
                 </div>
               </div>
             </div>
@@ -53,7 +66,8 @@ const Testimonials: React.FC = () => {
               Ready to Start Your Journey?
             </h3>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-              हज़ारों students की तरह आप भी अपना perfect internship find कर सकते हैं। आज ही शुरू करें!
+              Just like thousands of students, you can also find your perfect
+              internship. Start today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors min-h-[56px]">

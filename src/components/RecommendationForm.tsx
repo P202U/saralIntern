@@ -99,7 +99,8 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({
             Find Your Perfect Match
           </h2>
           <p className="text-lg text-gray-600">
-            अपनी जानकारी share करें और AI आपके लिए best internships find करेगी
+            Share your information and AI will find the best internships for
+            you.
           </p>
         </div>
 
