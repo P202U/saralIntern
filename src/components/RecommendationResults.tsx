@@ -100,8 +100,7 @@ const RecommendationResults: React.FC<RecommendationResultsProps> = ({
                 Review & Select
               </h4>
               <p className="text-gray-600 text-sm">
-                अपने favorite internships review करें और best options select
-                करें।
+                Review your favorite internships and select the best options.
               </p>
             </div>
 
@@ -111,7 +110,7 @@ const RecommendationResults: React.FC<RecommendationResultsProps> = ({
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">Apply Online</h4>
               <p className="text-gray-600 text-sm">
-                Simple online application process के through apply करें।
+                Apply through our simple online application process.
               </p>
             </div>
 
@@ -123,7 +122,7 @@ const RecommendationResults: React.FC<RecommendationResultsProps> = ({
                 Start Journey
               </h4>
               <p className="text-gray-600 text-sm">
-                Selection के बाद अपनी internship journey start करें!
+                After selection, start your internship journey!
               </p>
             </div>
           </div>
