@@ -1,8 +1,15 @@
 import React from 'react';
 import { Globe, Menu } from 'lucide-react';
 import FlashingHeader from './FlashingHeader';
+import { useTranslation } from 'react-i18next';
 
 const Header: React.FC = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <header className="bg-white shadow-sm border-b-2 border-orange-400">
       <div className="container mx-auto px-4 py-3">
