@@ -7,10 +7,17 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: [
+        'favicon/favicon.ico',
+        'favicon/apple-touch-icon.png',
+        'favicon/icon-192x192.png',
+        'favicon/icon-512x512.png',
+        'offline.html',
+      ],
       manifest: {
         name: 'SaralIntern: AI internship recommendation system',
         short_name: 'SaralIntern',
-        start_url: '.',
+        start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#4a90e2',
@@ -25,16 +32,24 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
           },
-          {
-            src: '/favicon/apple-touch-icon.png',
-            sizes: '180x180',
-            type: 'image/png',
-            purpose: 'any',
-          },
         ],
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png}'],
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'pages',
+              networkTimeoutSeconds: 5,
+              expiration: {
+                maxEntries: 50,
+              },
+            },
+          },
+        ],
+        navigateFallback: '/offline.html',
       },
     }),
   ],
